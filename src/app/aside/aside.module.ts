@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
-import { PerfilComponent } from './perfil/perfil.component';
-import { AsideLComponent } from './aside-l/aside-l.component';
-import { AsideHeaderComponent } from './aside-header/aside-header.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { AsideLComponent } from './components/componente/aside-l.component';
+import { AsideHeaderComponent } from './components/header/aside-header.component';
 import { AsideLayoutComponent } from './aside-layout/aside-layout.component';
 
 @NgModule({
