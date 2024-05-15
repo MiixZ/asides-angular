@@ -3,10 +3,42 @@
   href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
 />
 
-<div id="app" class="relative h-screen">
-  <div>ASIDE</div>
-  <div>MAIN</div>
-  <div>MAIN</div>
+<div id="app" class="relative h-screen p-2 gap-1">
+  <aside
+    class="[grid-area:aside] flex-col flex overflow-y-auto bg-slate-900 gap-4 p-2"
+  >
+    <app-perfil name="Rick Grimes"></app-perfil>
+    <app-aside-l
+      nombre="Luisa"
+      email="luisa@gmail.com"
+      [edad]="Number('12')"
+    ></app-aside-l>
+
+    <app-aside-l
+      nombre="Norber"
+      email="Norber@gmail.com"
+      [edad]="Number('67')"
+    ></app-aside-l>
+
+    <app-aside-l
+      nombre="Alberto"
+      email="Alberto@gmail.com"
+      [edad]="Number('22')"
+    ></app-aside-l>
+  </aside>
+
+  <main class="[grid-area:main] bg-black">{{ title }}</main>
+
+  <div class="[grid-area:cover] flex-col flex overflow-y-auto bg-black">
+    ASIDE
+  </div>
 </div>
 
-<style></style>
+<style>
+  #app {
+    display: grid;
+    grid-template-areas: "aside main cover";
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 1fr auto;
+  }
+</style>
