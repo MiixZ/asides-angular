@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './perfil.component.css',
 })
 export class PerfilComponent {
-  name: String = 'Sin nombre';
+  @Input() name: String = 'Sin nombre';
 }
