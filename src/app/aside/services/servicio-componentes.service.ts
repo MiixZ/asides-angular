@@ -13,4 +13,6 @@ export class ComponentesService {
   cambiarComponente(componente: componente) {
     this.componenteSource.next(componente);
   }
+
+  crearComponente() {}
 }
