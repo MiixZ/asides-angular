@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { componente } from '../../interfaces/componentes';
+import { ComponentesService } from '../services/servicio-componentes.service';
 
 export
 @Component({
@@ -7,9 +9,7 @@ export
   styleUrl: './aside-layout.component.css',
 })
 class AsideLayoutComponent {
-  Number(arg0: string): number {
-    return Number(arg0);
-  }
+  constructor(private componenteService: ComponentesService) {}
 
   componentes = [
     {
@@ -28,4 +28,8 @@ class AsideLayoutComponent {
       email: 'mariapatino@gmail.com',
     },
   ];
+
+  mostrarComponente(componente: componente) {
+    this.componenteService.cambiarComponente(componente);
+  }
 }

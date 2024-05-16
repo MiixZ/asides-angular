@@ -8,5 +8,6 @@
   <aside-component
     *ngFor="let componente of componentes"
     [data]="componente"
+    (click)="mostrarComponente(componente)"
   ></aside-component>
 </aside>

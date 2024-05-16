@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { componente } from '../../interfaces/componentes';
+import { componente } from '../../../interfaces/componentes';
 
 @Component({
   selector: 'aside-component',
