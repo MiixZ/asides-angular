@@ -1,0 +1,12 @@
+<aside
+  class="[grid-area:aside] flex-col flex overflow-y-auto bg-stone-900 gap-4 p-4 h-screen"
+>
+  <aside-perfil class="pb-6" name="Rick Grimes"></aside-perfil>
+
+  <aside-header></aside-header>
+
+  <aside-component
+    *ngFor="let componente of componentes"
+    [data]="componente"
+  ></aside-component>
+</aside>

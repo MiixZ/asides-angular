@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutCComponent } from './layout-c/layout-c.component';
+import { LayoutCComponent } from './pages/layout-c.component';
 import { asideModule } from './aside/aside.module';
 
 @NgModule({

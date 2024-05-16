@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-perfil',
+  selector: 'aside-perfil',
   templateUrl: './perfil.component.html',
   styleUrl: './perfil.component.css',
 })

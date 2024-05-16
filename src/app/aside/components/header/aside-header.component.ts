@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-aside-header',
+  selector: 'aside-header',
   templateUrl: './aside-header.component.html',
-  styleUrl: './aside-header.component.css'
+  styleUrl: './aside-header.component.css',
 })
-export class AsideHeaderComponent {
-
-}
+export class AsideHeaderComponent {}
