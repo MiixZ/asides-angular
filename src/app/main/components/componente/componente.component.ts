@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { componente } from '../../../interfaces/componentes';
+import { Component, Input } from '@angular/core';
+import { componente } from '@interfaces/componentes';
 
 @Component({
   selector: 'main-componente',
@@ -7,7 +7,11 @@ import { componente } from '../../../interfaces/componentes';
   styleUrl: './componente.component.css',
 })
 export class ComponenteComponent {
-  componente: componente | null = null;
+  @Input() componente: componente = {
+    nombre: '',
+    edad: 0,
+    email: '',
+  };
 
   constructor() {}
 }

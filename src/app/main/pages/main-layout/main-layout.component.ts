@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ComponentesService } from '../../../aside/services/servicio-componentes.service';
-import { componente } from '../../../interfaces/componentes';
+import { ComponentesService } from '@aside/services/servicio-componentes.service';
+import type { componente } from '@interfaces/componentes';
 
 @Component({
   selector: 'main-layout',
