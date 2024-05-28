@@ -8,7 +8,7 @@ import { ComponentesService } from '../../services/servicio-componentes.service'
 })
 export class AsideHeaderComponent {
   constructor(private componenteService: ComponentesService) {}
-  crearComponente() {
-    this.componenteService.crearComponente();
+  mostrarForm() {
+    this.componenteService.mostrarForm();
   }
 }

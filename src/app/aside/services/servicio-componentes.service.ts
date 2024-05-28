@@ -9,18 +9,23 @@ export class ComponentesService {
   constructor() {}
   private componenteSource = new BehaviorSubject<componente | null>(null);
   private componenteCreado = new BehaviorSubject<componente | null>(null);
+  private FormState = new BehaviorSubject<boolean | null>(null);
+
   componenteActual = this.componenteSource.asObservable();
   nuevoComponente = this.componenteCreado.asObservable();
+  estadoForm = this.FormState.asObservable();
+
+  estadoActual = false;
 
   cambiarComponente(componente: componente) {
     this.componenteSource.next(componente);
   }
 
-  crearComponente() {
-    this.componenteCreado.next({
-      nombre: 'Ana',
-      edad: 15,
-      email: 'ana@gmail.com',
-    } as componente);
+  crearComponente(componente: componente) {
+    this.componenteCreado.next(componente);
+  }
+
+  mostrarForm() {
+    this.FormState.next(!this.estadoActual);
   }
 }

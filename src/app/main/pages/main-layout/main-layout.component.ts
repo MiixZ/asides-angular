@@ -18,7 +18,7 @@ export class MainLayoutComponent {
       this.componente = componente;
     });
 
-    this.componentesService.nuevoComponente.subscribe((componente) => {
+    this.componentesService.estadoForm.subscribe((estado) => {
       this.crearComponente = !this.crearComponente;
     });
   }
