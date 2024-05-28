@@ -24,7 +24,8 @@
       "@interfaces/*": ["src/app/interfaces/*"],
       "@main/*": ["src/app/main/*"],
       "@pages/*": ["src/app/pages/*"],
-      "@aside/*": ["src/app/aside/*"]
+      "@aside/*": ["src/app/aside/*"],
+      "@img/*": ["src/img/*"]
     }
   },
   "angularCompilerOptions": {
