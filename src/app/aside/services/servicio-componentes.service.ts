@@ -17,7 +17,6 @@ export class ComponentesService {
   }
 
   crearComponente() {
-    console.log('gola gola');
     this.componenteCreado.next({
       nombre: 'Ana',
       edad: 15,

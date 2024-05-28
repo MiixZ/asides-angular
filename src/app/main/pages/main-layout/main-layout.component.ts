@@ -9,12 +9,17 @@ import type { componente } from '@interfaces/componentes';
 })
 export class MainLayoutComponent {
   componente: componente | null = null;
+  crearComponente: boolean = false;
 
   constructor(private componentesService: ComponentesService) {}
 
   ngOnInit() {
     this.componentesService.componenteActual.subscribe((componente) => {
       this.componente = componente;
+    });
+
+    this.componentesService.nuevoComponente.subscribe((componente) => {
+      this.crearComponente = !this.crearComponente;
     });
   }
 }

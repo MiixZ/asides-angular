@@ -1,0 +1,8 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'main-formulario',
+  templateUrl: './formulario.component.html',
+  styleUrl: './formulario.component.css',
+})
+export class FormularioComponent {}
