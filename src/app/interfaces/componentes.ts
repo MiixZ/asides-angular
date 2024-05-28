@@ -1,5 +1,5 @@
 export interface componente {
   nombre: string;
-  edad: Number;
+  edad: number;
   email: string;
 }

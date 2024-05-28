@@ -8,5 +8,7 @@ import { ComponentesService } from '../../services/servicio-componentes.service'
 })
 export class AsideHeaderComponent {
   constructor(private componenteService: ComponentesService) {}
-  crearComponente() {}
+  crearComponente() {
+    this.componenteService.crearComponente();
+  }
 }

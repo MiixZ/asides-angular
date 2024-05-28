@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { componente } from '../../interfaces/componentes';
-import { ComponentesService } from '../services/servicio-componentes.service';
+import { componente } from '@interfaces/componentes';
+import { ComponentesService } from '@aside/services/servicio-componentes.service';
 
 export
 @Component({
@@ -28,6 +28,12 @@ class AsideLayoutComponent {
       email: 'mariapatino@gmail.com',
     },
   ];
+
+  ngOnInit() {
+    this.componenteService.nuevoComponente.subscribe((componente) => {
+      if (componente) this.componentes.push(componente);
+    });
+  }
 
   mostrarComponente(componente: componente) {
     this.componenteService.cambiarComponente(componente);
